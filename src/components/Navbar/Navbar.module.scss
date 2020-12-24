@@ -1,0 +1,36 @@
+@import "./../../style/scss/index.scss";
+
+.navbarContainer {
+  @include flexboxMixin($justify: space-between, $align: center);
+
+  background-color: $PRIMARY_WHITE;
+  height: 3.5vw;
+
+  nav {
+    .navLinksList {
+      @include flexboxMixin();
+
+      list-style: none;
+
+      :first-of-type,
+      :last-of-type {
+        margin-left: 0.7vw;
+      }
+
+      li {
+        margin-right: 1vw;
+
+        a {
+          text-decoration: none;
+          color: $PRIMARY_BLACK;
+          font-size: 1.5vw;
+        }
+
+        .homeLink {
+          color: $PRIMARY_DARK_BLUE;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}
