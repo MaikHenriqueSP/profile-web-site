@@ -9,3 +9,8 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+body,
+#root {
+  min-height: 100vh;
+}
