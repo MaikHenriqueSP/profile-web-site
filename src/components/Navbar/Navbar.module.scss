@@ -11,11 +11,8 @@
       @include flexboxMixin();
 
       list-style: none;
-
-      :first-of-type,
-      :last-of-type {
-        margin-left: 0.7vw;
-      }
+      margin-right: 1vw;
+      margin-left: 2.5vw;
 
       li {
         margin-right: 1vw;
@@ -29,6 +26,90 @@
         .homeLink {
           color: $PRIMARY_DARK_BLUE;
           font-weight: bolder;
+        }
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-DESK} {
+  .navbarContainer {
+    height: 5vw;
+
+    nav {
+      .navLinksList {
+        margin-left: 3vw;
+
+        li {
+          margin-right: 2vw;
+
+          a {
+            font-size: 2.1vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-TABLET-LAND} {
+  .navbarContainer {
+    height: 7vw;
+
+    nav {
+      .navLinksList {
+        li {
+          margin-right: 3vw;
+          a {
+            font-size: 3vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-TABLET} {
+  .navbarContainer {
+    height: 9vw;
+
+    nav {
+      .navLinksList {
+        li {
+          a {
+            font-size: 3.9vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-MOBILE-LAND} {
+  .navbarContainer {
+    height: 12vw;
+
+    nav {
+      .navLinksList {
+        li {
+          a {
+            font-size: 4.5vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-MOBILE} {
+  .navbarContainer {
+    height: 15vw;
+    nav {
+      .navLinksList {
+        li {
+          a {
+            font-size: 6vw;
+          }
         }
       }
     }
