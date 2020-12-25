@@ -1,0 +1,111 @@
+@import "./../../style/scss/index.scss";
+
+.container {
+  @include flexboxMixin($justify: center, $align: center);
+  min-height: calc(100vh - 3.5vw);
+
+  background-image: url(./../../resources/img/background-home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  .mainContent {
+    display: inline-block;
+    margin-bottom: 7vw;
+
+    h1 {
+      font-size: 3.1vw;
+      text-align: center;
+
+      .nameHighlight {
+        color: $PRIMARY_YELLOW;
+      }
+    }
+
+    p {
+      font-size: 1.85vw;
+      text-align: center;
+    }
+
+    h1,
+    p {
+      color: $PRIMARY_WHITE;
+    }
+  }
+}
+
+@media #{$BREAKPOINT-DESK} {
+  .container {
+    min-height: calc(100vh - 5vw);
+
+    .mainContent {
+      h1 {
+        font-size: 3.9vw;
+      }
+
+      p {
+        font-size: 2.2vw;
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-TABLET-LAND} {
+  .container {
+    min-height: calc(100vh - 7vw);
+
+    .mainContent {
+      h1 {
+        font-size: 5.5vw;
+      }
+
+      p {
+        font-size: 3.7vw;
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-TABLET} {
+  .container {
+    min-height: calc(100vh - 9vh);
+
+    .mainContent {
+      h1 {
+        font-size: 7.5vw;
+      }
+
+      p {
+        font-size: 4.7vw;
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-MOBILE-LAND} {
+  .container {
+    min-height: calc(100vh - 12vw);
+
+    .mainContent {
+      h1 {
+        font-size: 8.5vw;
+      }
+
+      p {
+        font-size: 5.7vw;
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-MOBILE} {
+  .container {
+    min-height: calc(100vh - 15vw);
+
+    .mainContent {
+      h1 {
+        font-size: 9.5vw;
+      }
+    }
+  }
+}
