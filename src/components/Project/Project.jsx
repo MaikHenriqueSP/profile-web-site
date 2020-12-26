@@ -1,45 +1,45 @@
 import React from "react";
 
-import { ProjectIllustration } from "../index";
+import { ProjectIllustration, ProjectDescription } from "../index";
 import githubIcon from "../../resources/img/github-icon.svg";
 
 const Project = () => {
   const projectDetails = {
     resourcesUsed: ["Python", "Numpy", "Keras"],
     sourceCodeLink: ["http://github.com"],
+    projectDescription:
+      "This project was developed during a class and its intent is to be able to produce an agent capable of defeating all enemies from the Evoman game",
+    projectTitle: "Neuroevolution with Keras (2019)",
   };
 
-  const { resourcesUsed, sourceCodeLink } = projectDetails;
+  const {
+    resourcesUsed,
+    sourceCodeLink,
+    projectDescription,
+    projectTitle,
+  } = projectDetails;
+
   return (
     <article className="container">
       <header className="projectHeader">
-        <h1>Project name</h1>
+        <h1>{projectTitle}</h1>
       </header>
       <section className="projectDescriptionContainer">
         <article className="generalDescription">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            dolore neque quia.
-          </p>
+          <p>{projectDescription}</p>
         </article>
-        <article>
-          <header>
-            <h2>Technologies/Languages</h2>
-          </header>
+        <ProjectDescription descriptionTitle="Technologies/Languages">
           <ul>
             {resourcesUsed.map((resource) => (
               <li>{resource}</li>
             ))}
           </ul>
-        </article>
-        <article>
-          <header>
-            <h2>Source Code</h2>
-          </header>
+        </ProjectDescription>
+        <ProjectDescription descriptionTitle="Source Code">
           <a href={sourceCodeLink}>
             <img src={githubIcon} alt="Github source code link" />
           </a>
-        </article>
+        </ProjectDescription>
       </section>
       <ProjectIllustration />
     </article>
