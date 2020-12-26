@@ -1,0 +1,10 @@
+@import "./../../style/scss/index.scss";
+
+.container {
+  .pageTitle {
+    h1 {
+      text-align: center;
+      color: $PRIMARY_WHITE;
+    }
+  }
+}

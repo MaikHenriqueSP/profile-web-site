@@ -1,0 +1,33 @@
+@import "./../../style/scss/index.scss";
+
+.container {
+  @include flexboxMixin($justify: space-between, $align: center);
+  color: $PRIMARY_BLACK;
+
+  margin: 3vw 0;
+  .projectDescriptionContainer {
+    background-image: url(./../../resources/img/pencil.svg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: 60vw 60vw;
+
+    .projectDescription {
+      width: 75%;
+      padding: 25px 25px;
+
+      .projectHeader {
+        h1 {
+          font-size: 34px;
+        }
+      }
+
+      .generalDescription {
+        width: 85%;
+        p {
+          text-align: justify;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
