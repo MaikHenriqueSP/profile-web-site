@@ -14,6 +14,7 @@ const Portfolio = () => (
     </header>
     <section className={styles.projectsContainer}>
       <Project />
+      <Project />
     </section>
   </section>
 );

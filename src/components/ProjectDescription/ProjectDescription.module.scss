@@ -1,0 +1,25 @@
+@import "./../../style/scss/index.scss";
+
+.container {
+  header {
+    h2 {
+      font-size: 1.25vw;
+    }
+  }
+  .content {
+    margin-left: 1.4vw;
+    font-size: 1.2vw;
+  }
+}
+@media #{$BREAKPOINT-DESK} {
+  .container {
+    header {
+      h2 {
+        font-size: 1.35vw;
+      }
+    }
+    .content {
+      font-size: 1.4vw;
+    }
+  }
+}

@@ -2,12 +2,14 @@ import React from "react";
 
 import PropTypes from "prop-types";
 
+import styles from "./ProjectDescription.module.scss";
+
 const ProjectDescription = ({ children, descriptionTitle }) => (
-  <article>
+  <article className={styles.container}>
     <header>
       <h2>{descriptionTitle}</h2>
     </header>
-    <article className="content">{children}</article>
+    <article className={styles.content}>{children}</article>
   </article>
 );
 

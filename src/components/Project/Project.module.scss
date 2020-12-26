@@ -3,8 +3,8 @@
 .container {
   @include flexboxMixin($justify: space-between, $align: center);
   color: $PRIMARY_BLACK;
-
   margin: 3vw 0;
+
   .projectDescriptionContainer {
     background-image: url(./../../resources/img/pencil.svg);
     background-position: center left;
@@ -17,15 +17,38 @@
 
       .projectHeader {
         h1 {
-          font-size: 34px;
+          font-size: 1.76vw;
         }
       }
 
       .generalDescription {
         width: 85%;
+        margin-bottom: 0.4vw;
         p {
           text-align: justify;
-          font-size: 22px;
+          font-size: 1.1vw;
+        }
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-DESK} {
+  .container {
+    .projectDescriptionContainer {
+      background-size: 65.6vw 60vw;
+
+      .projectDescription {
+        .projectHeader {
+          h1 {
+            font-size: 2.2vw;
+          }
+        }
+
+        .generalDescription {
+          p {
+            font-size: 1.4vw;
+          }
         }
       }
     }

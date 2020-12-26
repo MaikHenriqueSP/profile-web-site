@@ -2,9 +2,11 @@
 
 .container {
   .pageTitle {
+    margin: 3vw 0;
     h1 {
-      text-align: center;
       color: $PRIMARY_WHITE;
+      text-align: center;
+      font-size: 1.85vw;
     }
   }
 }
