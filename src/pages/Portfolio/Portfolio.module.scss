@@ -10,3 +10,43 @@
     }
   }
 }
+
+@media #{$BREAKPOINT-TABLET-LAND} {
+  .container {
+    .pageTitle {
+      h1 {
+        font-size: 2vw;
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-TABLET} {
+  .container {
+    .pageTitle {
+      h1 {
+        font-size: 3vw;
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-MOBILE-LAND} {
+  .container {
+    .pageTitle {
+      h1 {
+        font-size: 3.2vw;
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-MOBILE} {
+  .container {
+    .pageTitle {
+      h1 {
+        font-size: 3.5vw;
+      }
+    }
+  }
+}
