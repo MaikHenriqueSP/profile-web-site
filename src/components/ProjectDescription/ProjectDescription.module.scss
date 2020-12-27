@@ -1,0 +1,91 @@
+@import "./../../style/scss/index.scss";
+
+.container {
+  header {
+    h2 {
+      font-size: 1.25vw;
+    }
+  }
+  .content {
+    margin-left: 1.4vw;
+    font-size: 1.2vw;
+  }
+}
+@media #{$BREAKPOINT-DESK} {
+  .container {
+    header {
+      h2 {
+        font-size: 1.35vw;
+      }
+    }
+    .content {
+      font-size: 1.4vw;
+    }
+  }
+}
+
+@media #{$BREAKPOINT-TABLET-LAND} {
+  .container {
+    header {
+      h2 {
+        font-size: 2vw;
+      }
+    }
+    .content {
+      font-size: 1.65vw;
+      margin-left: 2vw;
+    }
+  }
+}
+
+@media #{$BREAKPOINT-TABLET} {
+  .container {
+    header {
+      h2 {
+        font-size: 2.5vw;
+      }
+    }
+    .content {
+      font-size: 2vw;
+      img {
+        width: 6vw;
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-MOBILE-LAND} {
+  .container {
+    header {
+      h2 {
+        font-size: 3.5vw;
+      }
+    }
+    .content {
+      font-size: 2.6vw;
+      margin-left: 2.7vw;
+
+      img {
+        width: 7vw;
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-MOBILE} {
+  .container {
+    header {
+      h2 {
+        font-size: 3.7vw;
+      }
+    }
+    .content {
+      font-size: 3.2vw;
+      margin-left: 3.2vw;
+
+      img {
+        width: 8vw;
+      }
+    }
+  }
+}

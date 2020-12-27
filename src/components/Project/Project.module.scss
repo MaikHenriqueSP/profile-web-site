@@ -1,0 +1,148 @@
+@import "./../../style/scss/index.scss";
+
+.container {
+  @include flexboxMixin($justify: space-between, $align: center);
+  color: $PRIMARY_DARK_BLUE;
+  margin: 3vw 0;
+
+  .projectDescriptionContainer {
+    background-image: url(./../../resources/img/pencil.svg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: 60vw 60vw;
+
+    .projectDescription {
+      width: 75%;
+      padding: 25px 25px;
+
+      .projectHeader {
+        h1 {
+          font-size: 1.76vw;
+        }
+      }
+
+      .generalDescription {
+        width: 85%;
+        margin-bottom: 0.4vw;
+        p {
+          text-align: justify;
+          font-size: 1.1vw;
+        }
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-DESK} {
+  .container {
+    .projectDescriptionContainer {
+      background-size: 65.6vw 60vw;
+
+      .projectDescription {
+        .projectHeader {
+          h1 {
+            font-size: 2.2vw;
+          }
+        }
+
+        .generalDescription {
+          p {
+            font-size: 1.4vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-TABLET-LAND} {
+  .container {
+    flex-direction: column;
+    margin-top: 2vw;
+    margin-bottom: 5vw;
+
+    .projectDescriptionContainer {
+      background-image: none;
+      background-color: $PRIMARY_WHITE;
+      margin-bottom: 2vw;
+
+      .projectDescription {
+        width: 100%;
+        padding: 1.3vw 4vw;
+
+        .projectHeader {
+          h1 {
+            font-size: 2.8vw;
+            text-align: center;
+          }
+        }
+        .generalDescription {
+          width: 100%;
+
+          p {
+            font-size: 2vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-TABLET} {
+  .container {
+    .projectDescriptionContainer {
+      .projectDescription {
+        .projectHeader {
+          h1 {
+            font-size: 3.5vw;
+          }
+        }
+        .generalDescription {
+          p {
+            font-size: 2.5vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-MOBILE-LAND} {
+  .container {
+    .projectDescriptionContainer {
+      .projectDescription {
+        .projectHeader {
+          margin: 0.7vw 0;
+          h1 {
+            font-size: 4vw;
+          }
+        }
+        .generalDescription {
+          p {
+            font-size: 3vw;
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-MOBILE} {
+  .container {
+    .projectDescriptionContainer {
+      .projectDescription {
+        .projectHeader {
+          h1 {
+            font-size: 4.5vw;
+          }
+        }
+        .generalDescription {
+          p {
+            font-size: 3.5vw;
+          }
+        }
+      }
+    }
+  }
+}

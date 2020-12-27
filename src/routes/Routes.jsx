@@ -2,11 +2,12 @@ import React from "react";
 
 import { Route, Switch } from "react-router-dom";
 
-import { Home } from "../pages/index";
+import { Home, Portfolio } from "../pages/index";
 
 const Routes = () => (
   <Switch>
     <Route exact path={["/", "/home"]} component={Home} />
+    <Route path="/portfolio" component={Portfolio} />
   </Switch>
 );
 
