@@ -1,5 +1,90 @@
 @import "./../../style/scss/index.scss";
 
 .container {
+  @include flexboxMixin($justify: space-between);
+
   color: $PRIMARY_WHITE;
+  padding: 20px;
+  margin-top: 80px;
+
+  .defaultIcon {
+    filter: invert(100%) sepia(5%) saturate(88%) hue-rotate(198deg)
+      brightness(115%) contrast(80%);
+  }
+
+  .profileDescriptionContainer {
+    width: 60%;
+    margin-left: 80px;
+
+    .profileDescripitionItem {
+      font-size: 32px;
+      header {
+        margin-top: 20px;
+        h2 {
+          font-size: 42px;
+        }
+      }
+
+      article {
+        ul {
+          margin-left: 35px;
+        }
+        .knownLanguagesList {
+          @include flexboxMixin();
+          list-style: none;
+          margin-left: 2px;
+
+          li {
+            @include flexboxMixin($direction: column);
+            margin: 0.2vw 1vw;
+
+            img {
+              width: 46px;
+              margin: 0 auto;
+            }
+
+            span {
+              margin-top: 4px;
+              text-align: center;
+
+              font-size: 18px;
+              font-weight: bold;
+            }
+
+            &:first-of-type {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .profileContactContainer {
+    margin-right: 100px;
+    .profilePicture {
+      img {
+        width: 344px;
+        height: 344px;
+        border-radius: 50%;
+      }
+    }
+
+    .professionalContact {
+      ul {
+        @include flexboxMixin($justify: space-around);
+        list-style: none;
+
+        li {
+          a {
+            color: white;
+            text-decoration: none;
+
+            img {
+              width: 79px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
