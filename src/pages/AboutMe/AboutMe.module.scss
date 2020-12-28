@@ -1,0 +1,351 @@
+@import "./../../style/scss/index.scss";
+
+.container {
+  @include flexboxMixin($justify: space-between);
+
+  color: $PRIMARY_WHITE;
+  padding: 1vw;
+  margin-top: 4.1vw;
+
+  .defaultIcon {
+    filter: invert(100%) sepia(5%) saturate(88%) hue-rotate(198deg)
+      brightness(115%) contrast(80%);
+  }
+
+  .profileDescriptionContainer {
+    width: 60%;
+    margin-left: 4.1vw;
+
+    .profileDescripitionItem {
+      font-size: 1.65vw;
+
+      header {
+        h2 {
+          font-size: 2.2vw;
+        }
+      }
+
+      article {
+        ul {
+          margin-left: 1.8vw;
+        }
+
+        p {
+          text-align: justify;
+        }
+
+        .knownLanguagesList {
+          @include flexboxMixin();
+          list-style: none;
+          margin-left: 0.2vw;
+
+          li {
+            @include flexboxMixin($direction: column);
+            margin: 0.2vw 1vw;
+
+            img {
+              width: 2.4vw;
+              margin: 0 auto;
+            }
+
+            span {
+              margin-top: 0.2vw;
+              text-align: center;
+
+              font-size: 0.9vw;
+              font-weight: bold;
+            }
+
+            &:first-of-type {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .profileContactContainer {
+    margin-right: 5vw;
+
+    .profilePicture {
+      img {
+        width: 17.8vw;
+        border-radius: 50%;
+      }
+    }
+
+    .professionalContact {
+      ul {
+        @include flexboxMixin($justify: space-around);
+        list-style: none;
+
+        li {
+          a {
+            color: white;
+            text-decoration: none;
+
+            img {
+              width: 4.2vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-DESK} {
+  .container {
+    .profileDescriptionContainer {
+      width: 60%;
+
+      .profileDescripitionItem {
+        font-size: 1.7vw;
+
+        header {
+          h2 {
+            font-size: 2.7vw;
+          }
+        }
+        article {
+          .knownLanguagesList {
+            li {
+              img {
+                width: 4vw;
+              }
+              span {
+                font-size: 1.2vw;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .profileContactContainer {
+      .profilePicture {
+        img {
+          width: 22vw;
+        }
+      }
+      .professionalContact {
+        ul {
+          li {
+            a {
+              img {
+                width: 6vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-TABLET-LAND} {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .profileDescriptionContainer {
+      width: 100vw;
+      margin: 0;
+      padding: 0 5vw;
+
+      .profileDescripitionItem {
+        font-size: 2.5vw;
+        margin-bottom: 2vw;
+
+        header {
+          h2 {
+            font-size: 3.7vw;
+          }
+        }
+        article {
+          ul {
+            margin-left: 3vw;
+          }
+          .knownLanguagesList {
+            li {
+              margin: 0 2vw;
+              margin-top: 0.9vw;
+              img {
+                width: 6vw;
+              }
+              span {
+                font-size: 1.7vw;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .profileContactContainer {
+      margin: 0;
+
+      .profilePicture {
+        img {
+          width: 32vw;
+        }
+      }
+      .professionalContact {
+        ul {
+          li {
+            a {
+              img {
+                width: 6vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-TABLET} {
+  .container {
+    .profileDescriptionContainer {
+      .profileDescripitionItem {
+        font-size: 2.7vw;
+
+        header {
+          h2 {
+            font-size: 4.2vw;
+          }
+        }
+        article {
+          .knownLanguagesList {
+            li {
+              img {
+                width: 8vw;
+              }
+              span {
+                font-size: 1.9vw;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .profileContactContainer {
+      .profilePicture {
+        img {
+          width: 38vw;
+        }
+      }
+      .professionalContact {
+        ul {
+          li {
+            a {
+              img {
+                width: 8vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-MOBILE-LAND} {
+  .container {
+    .profileDescriptionContainer {
+      .profileDescripitionItem {
+        font-size: 3.1vw;
+
+        header {
+          h2 {
+            font-size: 5vw;
+          }
+        }
+        article {
+          .knownLanguagesList {
+            justify-content: space-between;
+            li {
+              margin: 0;
+              margin-top: 1.2vw;
+              img {
+                width: 10vw;
+              }
+              span {
+                font-size: 2.2vw;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .profileContactContainer {
+      .profilePicture {
+        img {
+          width: 45vw;
+        }
+      }
+      .professionalContact {
+        ul {
+          li {
+            a {
+              img {
+                width: 10vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$BREAKPOINT-MOBILE} {
+  .container {
+    .profileDescriptionContainer {
+      .profileDescripitionItem {
+        font-size: 3.7vw;
+
+        header {
+          h2 {
+            font-size: 6vw;
+          }
+        }
+        article {
+          .knownLanguagesList {
+            li {
+              img {
+                width: 12vw;
+              }
+              span {
+                font-size: 2.5vw;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .profileContactContainer {
+      .profilePicture {
+        img {
+          width: 52vw;
+        }
+      }
+      .professionalContact {
+        ul {
+          li {
+            a {
+              img {
+                width: 12vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

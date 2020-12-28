@@ -1,0 +1,22 @@
+@import "./../../style/scss/index.scss";
+
+.container {
+  margin-right: 3vw;
+
+  .imgContainer {
+    img {
+      width: 30vw;
+    }
+  }
+}
+
+@media #{$BREAKPOINT-TABLET-LAND} {
+  .container {
+    margin-right: 0;
+    .imgContainer {
+      img {
+        width: 50vw;
+      }
+    }
+  }
+}
