@@ -1,24 +1,18 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { ProjectIllustration, ProjectDescription } from "../index";
 import githubIcon from "../../resources/img/github-icon.svg";
 
 import styles from "./Project.module.scss";
 
-const Project = () => {
-  const projectDetails = {
-    resourcesUsed: ["Python", "Numpy", "Keras"],
-    sourceCodeLink: ["http://github.com"],
-    projectDescription:
-      "This project was developed during a class and its intent is to be able to produce an agent capable of defeating all enemies from the Evoman game",
-    projectTitle: "Neuroevolution with Keras (2019)",
-  };
-
+const Project = ({ projectDetails }) => {
   const {
     resourcesUsed,
     sourceCodeLink,
     projectDescription,
     projectTitle,
+    imgIllustration,
   } = projectDetails;
 
   return (
@@ -49,9 +43,19 @@ const Project = () => {
         </div>
       </section>
 
-      <ProjectIllustration />
+      <ProjectIllustration imgIllustration={imgIllustration} />
     </article>
   );
+};
+
+Project.propTypes = {
+  projectDetails: PropTypes.shape({
+    resourcesUsed: PropTypes.string,
+    sourceCodeLink: PropTypes.string,
+    projectDescription: PropTypes.string,
+    projectTitle: PropTypes.string,
+    imgIllustration: PropTypes.string,
+  }).isRequired,
 };
 
 export default Project;

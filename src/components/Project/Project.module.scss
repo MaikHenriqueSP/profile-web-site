@@ -1,20 +1,22 @@
 @import "./../../style/scss/index.scss";
 
 .container {
-  @include flexboxMixin($justify: space-between, $align: center);
+  @include flexboxMixin(
+    $justify: space-between,
+    $align: center,
+    $direction: column
+  );
+
   color: $PRIMARY_DARK_BLUE;
   margin: 3vw 0;
 
   .projectDescriptionContainer {
-    background-image: url(./../../resources/img/pencil.svg);
-    background-position: center left;
-    background-repeat: no-repeat;
-    background-size: 60vw 60vw;
+    background-color: $PRIMARY_WHITE;
+    margin-bottom: 2vw;
+    width: 100vw;
 
     .projectDescription {
-      width: 75%;
-      padding: 25px 25px;
-
+      padding: 2vw 4vw;
       .projectHeader {
         h1 {
           font-size: 1.76vw;
@@ -22,8 +24,8 @@
       }
 
       .generalDescription {
-        width: 85%;
         margin-bottom: 0.4vw;
+
         p {
           text-align: justify;
           font-size: 1.1vw;
@@ -36,8 +38,6 @@
 @media #{$BREAKPOINT-DESK} {
   .container {
     .projectDescriptionContainer {
-      background-size: 65.6vw 60vw;
-
       .projectDescription {
         .projectHeader {
           h1 {
