@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/profile-web-site/static/css/main.570e2611.chunk.css",
+    "main.js": "/profile-web-site/static/js/main.4e2d2105.chunk.js",
+    "main.js.map": "/profile-web-site/static/js/main.4e2d2105.chunk.js.map",
+    "runtime-main.js": "/profile-web-site/static/js/runtime-main.6ae2a324.js",
+    "runtime-main.js.map": "/profile-web-site/static/js/runtime-main.6ae2a324.js.map",
+    "static/js/2.5f8b5f2f.chunk.js": "/profile-web-site/static/js/2.5f8b5f2f.chunk.js",
+    "static/js/2.5f8b5f2f.chunk.js.map": "/profile-web-site/static/js/2.5f8b5f2f.chunk.js.map",
+    "index.html": "/profile-web-site/index.html",
+    "static/css/main.570e2611.chunk.css.map": "/profile-web-site/static/css/main.570e2611.chunk.css.map",
+    "static/js/2.5f8b5f2f.chunk.js.LICENSE.txt": "/profile-web-site/static/js/2.5f8b5f2f.chunk.js.LICENSE.txt",
+    "static/media/Home.module.scss": "/profile-web-site/static/media/background-home.38e5571f.png",
+    "static/media/evoman.caf423d5.png": "/profile-web-site/static/media/evoman.caf423d5.png",
+    "static/media/github-icon.8835058f.svg": "/profile-web-site/static/media/github-icon.8835058f.svg",
+    "static/media/ibicos.4611843d.png": "/profile-web-site/static/media/ibicos.4611843d.png",
+    "static/media/java-icon.f5e94f32.svg": "/profile-web-site/static/media/java-icon.f5e94f32.svg",
+    "static/media/javascript-icon.d746e7dc.svg": "/profile-web-site/static/media/javascript-icon.d746e7dc.svg",
+    "static/media/linkedin-icon.ed78e07b.svg": "/profile-web-site/static/media/linkedin-icon.ed78e07b.svg",
+    "static/media/pencil.028f113c.svg": "/profile-web-site/static/media/pencil.028f113c.svg",
+    "static/media/poke-app.ef18e041.png": "/profile-web-site/static/media/poke-app.ef18e041.png",
+    "static/media/profile-pic.44cceb03.jpeg": "/profile-web-site/static/media/profile-pic.44cceb03.jpeg",
+    "static/media/python-icon.2e993b55.svg": "/profile-web-site/static/media/python-icon.2e993b55.svg",
+    "static/media/react-icon.516a828e.svg": "/profile-web-site/static/media/react-icon.516a828e.svg",
+    "static/media/sql-icon.dc4dc82e.svg": "/profile-web-site/static/media/sql-icon.dc4dc82e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6ae2a324.js",
+    "static/js/2.5f8b5f2f.chunk.js",
+    "static/css/main.570e2611.chunk.css",
+    "static/js/main.4e2d2105.chunk.js"
+  ]
+}
