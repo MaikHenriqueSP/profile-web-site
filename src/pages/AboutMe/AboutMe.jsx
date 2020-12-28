@@ -98,7 +98,7 @@ const AboutMe = () => (
       <article className={styles.professionalContact}>
         <ul>
           <li>
-            <a href="http://www.linkedin.com">
+            <a href="https://www.linkedin.com/in/maik-henrique-390823170/">
               <img
                 src={linkedinIcon}
                 alt="Linkeding icon"
@@ -107,7 +107,7 @@ const AboutMe = () => (
             </a>
           </li>
           <li>
-            <a href="http://www.github.com">
+            <a href="https://github.com/MaikHenriqueSP">
               <img
                 src={githubIcon}
                 alt="Github icon"
