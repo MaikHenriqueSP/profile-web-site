@@ -12,6 +12,7 @@ const Project = ({ projectDetails }) => {
     sourceCodeLink,
     projectDescription,
     projectTitle,
+    imgIllustration,
   } = projectDetails;
 
   return (
@@ -42,7 +43,7 @@ const Project = ({ projectDetails }) => {
         </div>
       </section>
 
-      <ProjectIllustration />
+      <ProjectIllustration imgIllustration={imgIllustration} />
     </article>
   );
 };
@@ -53,6 +54,7 @@ Project.propTypes = {
     sourceCodeLink: PropTypes.string,
     projectDescription: PropTypes.string,
     projectTitle: PropTypes.string,
+    imgIllustration: PropTypes.string,
   }).isRequired,
 };
 

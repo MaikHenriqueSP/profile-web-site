@@ -9,3 +9,7 @@ export { default as sqlIcon } from "./sql-icon.svg";
 export { default as profilePicture } from "./profile-pic.jpeg";
 
 export { default as pencilBackground } from "./pencil.svg";
+
+export { default as pokeAppIllustration } from "./projects-illustration/poke-app.png";
+export { default as evomanIllustration } from "./projects-illustration/evoman.png";
+export { default as ibicosIllustration } from "./projects-illustration/ibicos.png";
